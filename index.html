@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Ramos Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imgs/icone.png">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo"> PORTFÓLIO </div>
+        <div class="nav-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <h1 class="hero-name">Olá, sou <br><span>Matheus Ramos</span></h1>
+        <p class="hero-subtitle">Universitário em Análise e Desenvolvimento de Sistemas</p>
+        <div class="hero-ctas">
+            <a href="#experiencia" class="btn-primary">Experiência Profissional</a>
+            <a href="#contato" class="btn-ghost">Redes Sociais</a>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="sobre-grid">
+            <div>
+                <div class="sobre-photo">
+                    <p><img src="imgs/Eu (2).jpeg" alt=""></p>
+                </div>
+            </div>
+
+            <div class="sobre-text">
+                <p class="secao-label">Sobre mim</p>
+                <h2 class="secao-title">Matheus de Souza Ramos</h2>
+                <div class="divider"></div>
+                <p>Nascido em Sinop-MT, 19 anos.</p>
+                <p>Atualmente estagiário em RH - Prefeitura de Sinop.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <p class="secao-label">Minha trajetória</p>
+        <h2 class="secao-title">Experiência profissional</h2>
+        <div class="divider"></div>
+
+        <div class="linha-tempo">
+            <div class="linha-tempo-item">
+                <div class="lt-periodo">01/2024 - 12/2025</div>
+                <div class="lt-cargo">Estagiário</div>
+                <div class="lt-empresa">Banco da Amazônia</div>
+                <div class="lt-descricao">
+                    <br> - Organização e conferência de documentação de processos.
+                    <br> - Participação na análise e emissão de relatórios.
+                    <br> - Elaboração de documentos no pacote Office
+                </div>
+            </div>
+
+            <div class="linha-tempo-item">
+                <div class="lt-periodo">01/2026 - ATUAL</div>
+                <div class="lt-cargo">Estagiário</div>
+                <div class="lt-empresa">RH - Prefeitura de Sinop</div>
+                <div class="lt-descricao">
+                    <br> - Apoio administrativo em processos burocráticos.
+                    <br> - Organização e conferência de documentação de Ofícios.
+                    <br> - Elaboração de relatórios periódicos.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="contato-inner">
+            <h2 class="secao-title">ENTRE EM CONTATO</h2>
+            <p class="contato-sub">Aberto a novas oportunidades, colaborações e Estágios em TI.</p>
+            <a href="mailto:rramos.sinop@gmail.com" class="contato-email">rramos.sinop@gmail.com</a>
+
+            <div class="links-sociais">
+                <a href="https://www.linkedin.com/in/matheus-ramos-244034397" class="link-social">
+                    LinkedIn
+                </a>
+
+                <a href="https://www.instagram.com/matheusramos.__/" class="link-social">
+                    Instagram
+                </a>
+
+                <a href="https://github.com/SomarSS" class="link-social">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sessao-api">
+        <div class="container">
+            <div class="bloco-principal">
+                <h2 class="titulo-api">Consulta Feriados Nacionais</h2>
+                <div>
+                    <input type="text" id="inputData" placeholder="Digite o Ano">
+                    <button class="btn-Data" id="btn-Data">Consultar</button>
+                    <div id="respostaData"></div>
+                </div>
+            </div>
+
+            <div class="bloco-principal">
+                <h2 class="titulo-api">Consulta CEP</h2>
+                <div>
+                    <input type="text" id="inputCEP" placeholder="Digite o CEP">
+                    <button class="btn-CEP" id="btn-CEP">Consultar</button>
+                    <div id="respostaCEP"></div>
+                </div>
+            </div>
+
+            <div class="bloco-principal">
+                <h2 class="titulo-api">Consulta IBGE</h2>
+                <div>
+                    <input type="text" id="inputIBGE" placeholder="Digite a sigla do Estado">
+                    <button class="btn-IBGE" id="btn-IBGE">Consultar</button>
+                    <div id="respostaIBGE"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por <strong>Matheus Ramos</strong> -- 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
